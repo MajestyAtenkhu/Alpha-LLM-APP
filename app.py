@@ -1,5 +1,5 @@
 import sys
-sys.path.append('C:\Users\maten\Documents\Resume\Majesty Resume V 5.1.pdf')  # replace 'path_to_directory' with the actual path to the directory
+sys.path.append(r'C:\Users\maten\Documents\Resume\Majesty Resume V 5.1.pdf')  # replace 'path_to_directory' with the actual path to the directory
 
 import streamlit as st
 import openai
