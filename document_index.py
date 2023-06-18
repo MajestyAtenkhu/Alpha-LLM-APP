@@ -3,7 +3,7 @@
 from langchain.document_loaders import TextLoader
 from langchain.indexes import VectorstoreIndexCreator
 
-def load_documents_and_create_index(C:\Users\maten\Documents\Resume\Majesty Resume V 5.1.pdf):
+def load_documents_and_create_index(C:\Users\maten\Documents\Resume\Majesty Resume V 5.1.pdf)
     # Load the documents
     loader = TextLoader(C:\Users\maten\Documents\Resume\Majesty Resume V 5.1.pdf)
 
