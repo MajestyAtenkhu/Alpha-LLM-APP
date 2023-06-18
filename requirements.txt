@@ -1,4 +1,6 @@
 streamlit
 openai
 langchain
+PyPDF2
+requests
 
