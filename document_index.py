@@ -4,7 +4,6 @@ from langchain.document_loaders import TextLoader
 from langchain.indexes import VectorstoreIndexCreator
 import pdfplumber
 import requests
-from io import BytesIO
 
 def load_documents_and_create_index(document_url):
 
