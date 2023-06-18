@@ -14,7 +14,7 @@ api_key = os.getenv("OPENAI_API_KEY")
 openai.api_key = api_key
 
 # Load your documents and create an index
-document_path = 'C:\Users\maten\Documents\Resume\Majesty Resume V 5.1.pdf'  # replace with the actual path to your document
+document_path = 'r'C:\Users\maten\Documents\Resume\Majesty Resume V 5.1.pdf'  # replace with the actual path to your document
 index = load_documents_and_create_index(document_path)
 
 def main():
