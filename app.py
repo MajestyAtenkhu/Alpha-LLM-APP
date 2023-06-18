@@ -1,5 +1,5 @@
-import sys
-sys.path.append("https://github.com/MajestyAtenkhu/Alpha-LLM-APP")  # replace 'path_to_directory' with the actual path to the directory
+#app.py
+ # replace 'path_to_directory' with the actual path to the directory
 
 import streamlit as st
 import openai
