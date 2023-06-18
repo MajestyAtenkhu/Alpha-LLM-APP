@@ -1,2 +1,6 @@
 streamlit
 openai
+langchain
+pinecone
+huggingface
+stablediffusion
