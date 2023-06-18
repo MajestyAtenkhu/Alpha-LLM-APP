@@ -1,6 +1,4 @@
 #app.py
- # replace 'path_to_directory' with the actual path to the directory
-
 import streamlit as st
 import openai
 import os
@@ -12,7 +10,6 @@ api_key = os.getenv("OPENAI_API_KEY")
 
 # Initialize the OpenAI API client
 openai.api_key = api_key
-
 
 # Load your documents and create an index
 document_url = "https://drive.google.com/file/d/1ZMqBigyaJcUsBsFLKe87c7Dz6strRAIF/view?usp=drivesdk"  # replace with the actual URL to your document
@@ -33,4 +30,5 @@ def main():
                 st.text(response)
 
 if __name__ == "__main__":
+    main()
     main()
