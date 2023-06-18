@@ -13,9 +13,10 @@ api_key = os.getenv("OPENAI_API_KEY")
 # Initialize the OpenAI API client
 openai.api_key = api_key
 
+
 # Load your documents and create an index
-document_path = r"C:\Users\maten\Documents\Resume\Majesty Resume V 5.1.pdf"  # replace with the actual path to your document
-index = load_documents_and_create_index(document_path)
+document_url = "https://drive.google.com/file/d/1ZMqBigyaJcUsBsFLKe87c7Dz6strRAIF/view?usp=drivesdk"  # replace with the actual URL to your document
+index = load_documents_and_create_index(document_url)
 
 def main():
     # Create a text input for the user's prompt
