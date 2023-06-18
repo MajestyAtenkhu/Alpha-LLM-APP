@@ -3,4 +3,4 @@ openai
 langchain
 pdfplumber
 requests
-
+os
