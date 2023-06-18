@@ -12,7 +12,7 @@ api_key = os.getenv("OPENAI_API_KEY")
 openai.api_key = api_key
 
 # Load your documents and create an index
-document_url = "https://drive.google.com/file/d/1ZMqBigyaJcUsBsFLKe87c7Dz6strRAIF/view?usp=drivesdk"  # replace with the actual URL to your document
+document_url = "https://cutt.ly/GwtezNoH"  # replace with the actual URL to your document
 index = load_documents_and_create_index(document_url)
 
 def main():
