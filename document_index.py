@@ -1,5 +1,4 @@
 #document_index.py
-pip install langchain
 
 from langchain.document_loaders import TextLoader
 from langchain.indexes import VectorstoreIndexCreator
