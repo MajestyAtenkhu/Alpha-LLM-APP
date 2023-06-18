@@ -1,5 +1,5 @@
 #document_index.py
-import request 
+import requests
 from langchain.document_loaders import TextLoader
 from langchain.indexes import VectorstoreIndexCreator
 
