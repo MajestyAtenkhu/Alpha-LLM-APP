@@ -1,5 +1,3 @@
-#document_index.py
-
 from langchain.document_loaders import TextLoader
 from langchain.indexes import VectorstoreIndexCreator
 import pdfplumber
@@ -14,10 +12,13 @@ def load_documents_and_create_index(document_url):
     # Extract text from the PDF
     with pdfplumber.open('document.pdf') as pdf:
         text = '\n'.join(page.extract_text() for page in pdf.pages)
+
     # Load the documents
-    loader = TextLoader(document_content)
+    loader = TextLoader(text)  # corrected line
 
     # Create the index
     index = VectorstoreIndexCreator().from_loaders([loader])
 
     return index
+
+
