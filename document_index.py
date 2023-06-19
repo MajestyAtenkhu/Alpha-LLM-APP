@@ -1,7 +1,9 @@
-from langchain.document_loaders import TextLoader
-from langchain.indexes import VectorstoreIndexCreator
+#document_index.py
 import pdfplumber
 import requests
+from langchain.document_loaders import TextLoader
+from langchain.indexes import VectorstoreIndexCreator
+from langchain.chains import QAGenerationChain
 
 def load_documents_and_create_index(document_url):
     # Modify the URL to point to the raw PDF file
@@ -17,7 +19,7 @@ def load_documents_and_create_index(document_url):
         text = '\n'.join(page.extract_text() for page in pdf.pages)
 
     # Load the documents
-    loader = TextLoader(text)  # corrected line
+    loader = TextLoader(text)
 
     # Create the index
     index = VectorstoreIndexCreator().from_loaders([loader])
