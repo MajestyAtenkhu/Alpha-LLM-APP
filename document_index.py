@@ -4,8 +4,11 @@ import pdfplumber
 import requests
 
 def load_documents_and_create_index(document_url):
+    # Modify the URL to point to the raw PDF file
+    raw_url = document_url.replace("github.com", "raw.githubusercontent.com").replace("/blob", "")
+
     # Download the document
-    response = requests.get(document_url)
+    response = requests.get(raw_url)
     with open('document.pdf', 'wb') as f:
         f.write(response.content)
 
@@ -20,5 +23,6 @@ def load_documents_and_create_index(document_url):
     index = VectorstoreIndexCreator().from_loaders([loader])
 
     return index
+
 
 
