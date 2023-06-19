@@ -12,7 +12,7 @@ api_key = os.getenv("OPENAI_API_KEY")
 openai.api_key = api_key
 
 # Load your documents and create an index
-document_url = "https://github.com/MajestyAtenkhu/Alpha-LLM-APP/blob/172efbd518fdea3bd9589c6cdbf56466ddfcd4f8/Majesty%20Resume%20V%205.1.pdf"  # replace with the actual URL to your document
+document_url = "https://github.com/MajestyAtenkhu/Alpha-LLM-APP/blob/main/Majesty%20Resume%20V%205.1.pdf"  # replace with the actual URL to your document
 index = load_documents_and_create_index(document_url)
 
 def main():
